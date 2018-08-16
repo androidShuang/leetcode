@@ -51,7 +51,7 @@ import java.util.List;
 
  *
  */
-
+//注意这里Z字变换Z要竖着
 public class ZigConvert {
     public String convert(String s, int numRows) {
 
