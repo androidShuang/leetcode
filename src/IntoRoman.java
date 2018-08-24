@@ -52,6 +52,7 @@ public class IntoRoman {
         int[] value = {1000,500,100,50,10,5,1};
 
 
+        //步长为2
         for (int i = 0; i < 7; i+=2) {
             int n = num/value[i];
             if(n<4){
