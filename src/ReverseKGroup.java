@@ -49,10 +49,12 @@ public class ReverseKGroup {
     }
 
     public ListNode reverseNode(ListNode pre,ListNode next){
+        //为什么要用last记录一下，因为要返回下一个翻转的前一个NODE
         ListNode last = pre.next;
         ListNode curr = last.next;
         while(curr!=next){
             last.next = curr.next;
+            //为什么用Pre.next?因为Pre.next指向上一个curr
             curr.next = pre.next;
             pre.next = curr;
             curr = last.next;
